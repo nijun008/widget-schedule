@@ -1,0 +1,59 @@
+$dayBorder: 1px solid #F2F2F2;
+
+.week-lists, .day-lists, .schedule-bar, .switch-box {
+  display: flex;
+  font-size: 13px;
+}
+.schedule-bar {
+  justify-content: space-between;
+  font-weight: 600;
+  height: 34px;
+  align-items: center;
+}
+
+.week-lists {
+  padding: 10px 0;
+
+  .week-item {
+    width: 14.285%;
+  }
+}
+
+.day-lists {
+  
+  flex-wrap: wrap;
+  border-right: $dayBorder;
+  border-bottom: $dayBorder;
+  box-sizing: border-box;
+
+  .day-item {
+    border-left: $dayBorder;
+    border-top: $dayBorder;
+    box-sizing: border-box;
+    width: 14.285%;
+    height: 100px;
+    padding: 6px 4px;
+    text-align: left;
+    cursor: pointer;
+
+    .day-label {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+
+  .curreny-day {
+    
+    .day-label {
+      background-color: #4772FA;
+      color: #FFFFFF;
+      border-radius: 50%;
+    }
+  }
+
+  .selected-day {
+    background-color: #ECF1FE;
+  }
+}
